@@ -487,6 +487,46 @@ syndromes = [
                     "GORLIN, R. J. et al. (1990). \"Syndromes of the Head and Neck\", Third Edition, Oxford\n\
                     University Press, págs. 641-646."],
         features: [4, 18, 31, 32, 45, 46, 51, 59, 67]
+    },
+    {
+        id: 70,
+        name: "Síndrome de Treacher-Collins",
+        synonym: "Disostosis mandíbulo-facial",
+        inheritance: "Autosómica dominante",
+        retardation: false,
+        retardationNotes:"",
+        evolution: "El diagnóstico puede hacerse desde el nacimiento. Es importante detectar tempranamente la sordera\n\
+                    e iniciar cuanto antes terapias de lenguaje. El pronóstico en general es bueno, pero en ocasiones\n\
+                    pueden presentarse complicaciones respiratorias severas. Los tratamientos de ortodoncia y las cirugías\n\
+                    plástica y otorrinolaringológica mejoran notablemente su calidad de vida.",
+        clinicalExams: "El diagnóstico es clínico. dseben realizarse pruebas auditivas buscando sordera. Se recomienda\n\
+                    investigar antecedentes de ingestión de derivados de la vitamina A, durante el embarazo, en el \n\
+                    diagnóstico diferencial.",
+        bibliography: ["SULIK, K. K. et al. (1987). \"Mandibulofacial Dysostosis (Treacher Collins Syndrome): A New \n\
+                    Proposal fot its Pathogenesis\", American Journal of Medical Genetics, Vol. 27: 359-372"],
+        features: [4, 12, 22, 32, 45, 46, 49, 51, 54, 59]
+    },
+    {
+        id: 47,
+        name: "Amioplasia Congénita",
+        synonym: "Artrogriposis múltiple congénita",
+        inheritance: "Presentación esporádica",
+        retardation: false,
+        retardationNotes:"",
+        evolution: "Se diagnostica al nacimiento. Usualmente cursan con inteligencia normal y responden bien a los\n\
+                    tratamientos quirúrgicos y ortopédicos. Aquellos pacientes con malformaciones gastrointestinales\n\
+                    como gastrosquisis y atresia intestinal tienen mayor mortalidad por complicaciones en el período\n\
+                    neonatal. Se desconoce la cusa de esta entidad, sin embargo se cree que se puede tratar de un proceso\n\
+                    de disrupción vascular qu eocurre después de que el desarrollo embriológico se ha completado.",
+        clinicalExams: "El diagnóstico es clínico. Cuando se presenta solo en hombres en una familia o es más leve\n\
+                    en mujeres, deben descartarse aquellas artogriposis ligadas a X.",
+        bibliography: ["COLLINS, D. L. et al. (1986). \"Multiple Intestinal Atresia and Amyoplasia Congenita in \n\
+                    Four Unrelated Infats: A New Association\", Journal of Pediatric Surgery, Vol 21, No. 4,\n\
+                    págs. 331-333.", 
+                    "REID, C. O. M. V. et al. (1986). \"Association of Amyloplasia with Gastroschisis, Bowel Atresia,\n\
+                    and Defects of the Muscular Layer of the Trunk\", American Journal of Medical Genetics, Vol.\n\
+                    24: 701-710."],
+        features: [14, 47, 83, 84, 88, 104]
     }
 ];
 
