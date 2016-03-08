@@ -527,6 +527,127 @@ syndromes = [
                     and Defects of the Muscular Layer of the Trunk\", American Journal of Medical Genetics, Vol.\n\
                     24: 701-710."],
         features: [14, 47, 83, 84, 88, 104]
-    }
+    },
+    {
+        id: 96,
+        name: "Síndrome de Hurler",
+        synonym: "Mucoliposacaridosis tipo I",
+        inheritance: "Autosómica recesiva",
+        retardation: true,
+        retardationNotes:"",
+        evolution: "El cuadro clínico sólo es evidente alrededor de los 2 años de edad, cuando además de iniciarse\n\
+                    los cambios en cara se presenta limitación en movimiento de caderas, deterioro mental y aumento en\n\
+                    la frecuencia de infecciones respiratorias, las cuales pueden llevar a la muerte, asociadas a \n\
+                    complicaciones cardiacas.",
+        clinicalExams: "El diagnóstico se basa en el cuadro clínico, radiológico (disostosis múltiple) y los hallazgos de \n\
+                    laboratorio. La entidad se presenta por déficit de alpha-L-Iduronidasa, lo cual se puede medir en \n\
+                    cultivo de fibroblastos y leucocitos. En orina se presenta aumento en la excreción de glucosaminoglicanos,\n\
+                    predominando dermatán sulfato y heparán sulfato. Se utilizan pruebas diagnósticas como el Test de Azul\n\
+                    de Toluidina. El estudio histopatológico muestra acúmilo de mucopolisacáridos en tejidos y en el\n\
+                    corazón se observan cambios de fibroelastosis endocárdica. Se recomienda un estudio electro y\n\
+                    ecocardiográfico.",
+        bibliography: ["ROUBICEK, M. et al. (1985). \"The Clinical Spectrum of alpha-L-Iduronidase Deficiency\",\n\
+                    American Journal of Medical Genetics, Vol. 20: 471-481.", 
+                    "STEPHAN, M. J. et al. (1989). \"Mucopolysaccharidosis I Presenting With Endocardial Fibroelastosis\n\
+                    of Infancy\". American Journal of Diseases of Children, Vol. 143: 782-784."],
+        features: [8, 11, 17, 21, 36, 40, 66, 83, 91, 94, 95, 96, 114, 115]
+    },
+    {
+        id: 1,
+        name: "Displasia Campomélica",
+        synonym: "Enanismo campomélico",
+        inheritance: "Autosómica recesiva",
+        retardation: true,
+        retardationNotes:"",
+        evolution: "Se dio el término \"campomélico\" queriendo significar \"extremidades arqueadas\", siendo esta la\n\
+                    característica más importante de la entidad. La mayoría de los pacientes mueren de insuficiencia\n\
+                    respiratoria enn el período neonatal o en infancia temprana por infección respiratoria debida a \n\
+                    broncoaspiración. Aquellos que sobreviven presentan falla en el crecimiento, dificultades para la\n\
+                    alimentación y evidencia de alteración severa en el Sistema Nervioso Central. En los hombres (46XY)\n\
+                    es frecuente encontrar un fenotipo femenino por disgenesia gonadal. Usualmente las extremidades superiores\n\
+                    no están arqueadas pero sí pueden estar ligeramente acortadas. Casi todos los pacientes han muerto\n\
+                    antes de los 10 meses de edad, aunque se ha descrito un paciente de 17 años. Todos los que han sobrevivido\n\
+                    presentan retardo mental y sordera.",
+        clinicalExams: "El diagnóstico es clínico y radiológico. Se encuentra falta de osificación de las epífisis proximales\n\
+                    de tibia, fémur y astrágalo; ausencia de mineralización del esternón. En pacientes con fenotipo femenino\n\
+                    es obligatorio realizar cariotipo para descartar un genotipo masculinoo con disgenesia gonada, lo cual\n\
+                    cual ocurre en el 50% de los casos.",
+        bibliography: ["HALL, B. D. and SPRANGE, J. W. (1980). \"Campomelic Dysplasia\", Am J Dis Child, Vol. 134: 285-289.", 
+                    "HOUSTON, C. S. et al. (1983). \"The Campomelic Syndrome\", American Journal of Medical Genetics, Vol.. 13: 3-28."],
+        features: [6, 8, 11, 13, 40, 47, 49, 57, 59, 62, 65, 66, 67, 72, 80, 82, 114, 115]
+    },
+    {
+        id: 1,
+        name: "Displasia Campomélica",
+        synonym: "Enanismo campomélico",
+        inheritance: "Autosómica recesiva",
+        retardation: true,
+        retardationNotes:"",
+        evolution: "Se dio el término \"campomélico\" queriendo significar \"extremidades arqueadas\", siendo esta la\n\
+                    característica más importante de la entidad. La mayoría de los pacientes mueren de insuficiencia\n\
+                    respiratoria enn el período neonatal o en infancia temprana por infección respiratoria debida a \n\
+                    broncoaspiración. Aquellos que sobreviven presentan falla en el crecimiento, dificultades para la\n\
+                    alimentación y evidencia de alteración severa en el Sistema Nervioso Central. En los hombres (46XY)\n\
+                    es frecuente encontrar un fenotipo femenino por disgenesia gonadal. Usualmente las extremidades superiores\n\
+                    no están arqueadas pero sí pueden estar ligeramente acortadas. Casi todos los pacientes han muerto\n\
+                    antes de los 10 meses de edad, aunque se ha descrito un paciente de 17 años. Todos los que han sobrevivido\n\
+                    presentan retardo mental y sordera.",
+        clinicalExams: "El diagnóstico es clínico y radiológico. Se encuentra falta de osificación de las epífisis proximales\n\
+                    de tibia, fémur y astrágalo; ausencia de mineralización del esternón. En pacientes con fenotipo femenino\n\
+                    es obligatorio realizar cariotipo para descartar un genotipo masculinoo con disgenesia gonada, lo cual\n\
+                    cual ocurre en el 50% de los casos.",
+        bibliography: ["HALL, B. D. and SPRANGE, J. W. (1980). \"Campomelic Dysplasia\", Am J Dis Child, Vol. 134: 285-289.", 
+                    "HOUSTON, C. S. et al. (1983). \"The Campomelic Syndrome\", American Journal of Medical Genetics, Vol.. 13: 3-28."],
+        features: [6, 8, 11, 13, 40, 47, 49, 57, 59, 62, 65, 66, 67, 72, 80, 82, 114, 115]
+    },
+    {
+        id: 2,
+        name: "Síndrome de Russell-Silver",
+        synonym: "Síndrome de Silver-Russell",
+        inheritance: "Presentación esporádica",
+        retardation: false,
+        retardationNotes:"leve en el 35%",
+        evolution: "La baja estatura se presenta desde antes del nacimiento y se mantiene a través de la niñez, alcanzando\n\
+                    una estatura promedio en la edad adulta de 149 cm para los hombres y 138 cm para las mujeres. La asimetría\n\
+                    músculo-esquelética puede comprometer solo la cabeza, el tronco o las extremidades y ocasionalmente ser\n\
+                    total, acompañándose de pobre desarrollo muscular y de la motricidad gruesa. Hay aumento de sudoración\n\
+                    en la infancia. La hipoglicemia se presenta entre los 10 meses y 3 años, después de peridos cortos de\n\
+                    ayuno. El tratamiento es sintomático.",
+        clinicalExams: "El diagnóstico es clínico y radiológico. Los RX muestran cierre tardío de la fontanela anterior\n\
+                    y la edad ósea está retrasada con relación a la edad cronológica y al desarrollo sexual. Puede encontrarse\n\
+                    el húmero y la falange media del 5o. dedo acortados. En algunos casos se han encontrado niveles elevados\n\
+                    de gonadatropinas urinarias y en otros hay deficiencia de hormona de crecimiento. Se recomienda realizar\n\
+                    evaluaciones periódicas para descartar la presencia de tumores renales o adrenales.",
+        bibliography: ["CASSIDY, S. B. et al. (1986). \"Russell-Silver Syndrome and Hypopituitarism\", Am J Dis Child, Vol. 140:\n\
+                    155-159.", 
+                    "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
+                    Vol. 107: 733-737."],
+        features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
+    },
+    {
+        id: 2,
+        name: "Síndrome de Russell-Silver",
+        synonym: "Síndrome de Silver-Russell",
+        inheritance: "Presentación esporádica",
+        retardation: false,
+        retardationNotes:"leve en el 35%",
+        evolution: "La baja estatura se presenta desde antes del nacimiento y se mantiene a través de la niñez, alcanzando\n\
+                    una estatura promedio en la edad adulta de 149 cm para los hombres y 138 cm para las mujeres. La asimetría\n\
+                    músculo-esquelética puede comprometer solo la cabeza, el tronco o las extremidades y ocasionalmente ser\n\
+                    total, acompañándose de pobre desarrollo muscular y de la motricidad gruesa. Hay aumento de sudoración\n\
+                    en la infancia. La hipoglicemia se presenta entre los 10 meses y 3 años, después de peridos cortos de\n\
+                    ayuno. El tratamiento es sintomático.",
+        clinicalExams: "El diagnóstico es clínico y radiológico. Los RX muestran cierre tardío de la fontanela anterior\n\
+                    y la edad ósea está retrasada con relación a la edad cronológica y al desarrollo sexual. Puede encontrarse\n\
+                    el húmero y la falange media del 5o. dedo acortados. En algunos casos se han encontrado niveles elevados\n\
+                    de gonadatropinas urinarias y en otros hay deficiencia de hormona de crecimiento. Se recomienda realizar\n\
+                    evaluaciones periódicas para descartar la presencia de tumores renales o adrenales.",
+        bibliography: ["CASSIDY, S. B. et al. (1986). \"Russell-Silver Syndrome and Hypopituitarism\", Am J Dis Child, Vol. 140:\n\
+                    155-159.", 
+                    "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
+                    Vol. 107: 733-737."],
+        features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
+    },
+    
 ];
 
