@@ -623,31 +623,7 @@ syndromes = [
                     "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
                     Vol. 107: 733-737."],
         features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
-    },
-    {
-        id: 2,
-        name: "S\u00edndrome de Russell-Silver",
-        synonym: "S\u00edndrome de Silver-Russell",
-        inheritance: "Presentaci\u00f3n espor\u00e1dica",
-        retardation: false,
-        retardationNotes:"leve en el 35%",
-        evolution: "La baja estatura se presenta desde antes del nacimiento y se mantiene a trav\u00e9s de la ni\u00f1ez, alcanzando\n\
-                    una estatura promedio en la edad adulta de 149 cm para los hombres y 138 cm para las mujeres. La asimetr\u00eda\n\
-                    m\u00fasculo-esquel\u00e9tica puede comprometer solo la cabeza, el tronco o las extremidades y ocasionalmente ser\n\
-                    total, acompa\u00f1\u00e1ndose de pobre desarrollo muscular y de la motricidad gruesa. Hay aumento de sudoraci\u00f3n\n\
-                    en la infancia. La hipoglicemia se presenta entre los 10 meses y 3 a\u00f1os, despu\u00e9s de peridos cortos de\n\
-                    ayuno. El tratamiento es sintom\u00e1tico.",
-        clinicalExams: "El diagn\u00f3stico es cl\u00ednico y radiol\u00f3gico. Los RX muestran cierre tard\u00edo de la fontanela anterior\n\
-                    y la edad \u00f3sea est\u00e1 retrasada con relaci\u00f3n a la edad cronol\u00f3gica y al desarrollo sexual. Puede encontrarse\n\
-                    el h\u00famero y la falange media del 5o. dedo acortados. En algunos casos se han encontrado niveles elevados\n\
-                    de gonadatropinas urinarias y en otros hay deficiencia de hormona de crecimiento. Se recomienda realizar\n\
-                    evaluaciones peri\u00f3dicas para descartar la presencia de tumores renales o adrenales.",
-        bibliography: ["CASSIDY, S. B. et al. (1986). \"Russell-Silver Syndrome and Hypopituitarism\", Am J Dis Child, Vol. 140:\n\
-                    155-159.", 
-                    "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
-                    Vol. 107: 733-737."],
-        features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
-    },
+    }
     
 ];
 
