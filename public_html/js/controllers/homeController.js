@@ -6,23 +6,40 @@
 
 var controllerModule = angular.module('geneticSyndromeCatalogAppControllers');
 
-controllerModule.controller('homeController', ['$scope', 'catalogService', '_', function ($scope, movieService, _) {
-        $scope.movie = {};
-        $scope.movies = [];
-        $scope.getAllMovies = function () {
-            movieService.getAllMovies().then(function (response) {
-                $scope.movies = response.data;
-            });
+controllerModule.controller('homeController', ['$scope', 'catalogService', '_', function ($scope, catalogService, _) {
+        $scope.features = [];
+        $scope.selectedFeatures = [];
+        $scope.allSyndromes = [];
+        $scope.filteredSyndromes = [];
+
+        $scope.getAllSyndromes = function () {
+            $scope.allSyndromes = catalogService.getAllSyndromes();
+            $scope.filteredSyndromes = $scope.allSyndromes;
+        };
+        $scope.getAllFeatures = function () {
+            $scope.features = catalogService.getAllFeatures();
         };
 
-        $scope.createMovie = function () {
-            movieService.createMovie($scope.movie).then(function (response) {
-                $scope.getAllMovies();
-                $scope.movie = {};
-            });
+        $scope.filterSyndromes = function (item, model) {
+            if ($scope.selectedFeatures.length === 0) {
+                $scope.filteredSyndromes = $scope.allSyndromes;
+            } else {
+                var ids = _.map($scope.selectedFeatures, 'id');
+                $scope.filteredSyndromes = _.filter($scope.allSyndromes, function (s) {
+                    var t = _.every(ids, function (i) {
+                        return _.find(s.features, function (f) {
+                            return i === f;
+                        }) !== undefined;
+                    });
+                    return t;
+                });
+            }
+
+
         };
-        
-        $scope.getAllMovies();
+        $scope.getAllFeatures();
+        $scope.getAllSyndromes();
+
 
     }]);
 
