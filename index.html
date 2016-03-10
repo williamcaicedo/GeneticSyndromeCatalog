@@ -1,25 +1,237 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en" ng-app="geneticSyndromeCatalogApp">
+
     <head>
-        <title>Cat&aacute;logo de S&iacute;ndromes Gen&eacute;ticos</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Design Bootstrap Template</title>
+
+        <!-- Material Design Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.css" rel="stylesheet">
+
+        <!-- Select style -->
+        <link href="css/select.min.css" rel="stylesheet">
+
+        <!-- Template style -->
+        <link href="css/style.css" rel="stylesheet">
+
     </head>
-    <body>
-        <div>TODO write content</div>
-        
-        <script src="js/lib/jquery-1.11.1.min.js"></script>
+
+    <body ng-controller="homeController">
+
+        <!-- Navigation -->
+        <nav class="navbar z-depth-2 info-color">
+            <div class="container ">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand waves-effect waves-light" href="#">MDBootstrap</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#products" class="waves-effect waves-light">Products <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">List (click to expand) <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#videomaker">Video Maker</a>
+                                </li>
+                                <li><a href="#mdb">Material Design for Bootstrap</a>
+                                </li>
+                                <li><a href="#creativeagency">Creative Agency</a>
+                                </li>
+                                <li><a href="#photographer">Photographer Portfolio</a>
+                                </li>
+                                <li><a href="#service">Service Portfolio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#footer">Footer</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right waves-effect waves-light" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header" id="products">Cat&aacute;logo de S&iacute;ndromes gen&eacute;ticos
+                        <small>Universidad Tecnol&oacute;gica de Bol&iacute;var</small>
+                    </h1>
+                    <ui-select multiple ng-model="$parent.selectedFeatures" on-select="filterSyndromes($item, $model)" 
+                               on-remove="filterSyndromes($item, $model)" theme="bootstrap" ng-disabled="disabled">
+                        <ui-select-match placeholder="Seleccione las caracter&iacute;stica(s)...">{{$item.name}}</ui-select-match>
+                        <ui-select-choices repeat="feature in features | propsFilter: {name: $select.search}">
+                            <div ng-bind-html="feature.name | highlight: $select.search"></div>
+
+                        </ui-select-choices>
+                    </ui-select>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+
+
+            <!-- /.row -->
+            <div ng-repeat="syndrome in filteredSyndromes">
+                <!-- Project One -->
+                <div  class="row">
+                    <div class="col-md-7">
+                        <a href="">
+                            <img class="img-responsive z-depth-1 hoverable" src="img/dna.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5" id="videomaker">
+                        <h3>{{syndrome.name}}</h3>
+                        <h4>Sin&oacute;nimo: {{syndrome.synonym}}</h4>
+                        <p>{{syndrome.evolution| limitTo:200}}...</p>
+                        <a href="">
+                            <button type="button" class="btn btn-info waves-effect waves-light">Leer m&aacute;s...</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+            </div>
+
+
+
+
+            <hr>
+
+            <!-- Pagination -->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">&raquo;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+        </div>
+        <!-- /.container -->
+
+
+        <!-- Footer -->
+        <footer class="page-footer info-color darken-1" if="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-1">
+                        <p class="white-text center-on-small-only">GET STARTED</p>
+                        <p class="white-text center-on-small-only">Register for free and start to create amazing things.</p>
+                        <a href="http://mdbootstrap.com/getting-started/" class="btn btn-danger waves-effect waves-light">Get started!</a>
+
+                    </div>
+                    <hr class="hidden-lg hidden-md">
+
+                    <div class="col-md-2">
+                        <p class="white-text center-on-small-only">USEFUL LINKS</p>
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal" class="grey-text text-lighten-3" href="#!">Contact us</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="http://mdbootstrap.com/forums/forum/support/" target="_blank">Support</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="http://mdbootstrap.com/forums/forum/bugs/" target="_blank">Bug report</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <hr class="hidden-lg hidden-md">
+
+                    <div class="col-md-3 text-center">
+                        <p class="white-text text-center"> SOCIAL MEDIA</p>
+                        <a target="_blank" href="https://www.facebook.com/mdbootstrap" class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="fa fa-facebook"> </i></a>
+                        <a target="_blank" href="https://twitter.com/MDBootstrap" class="btn-floating btn-large tw-bg waves-effect waves-light"><i class="fa fa-twitter"> </i></a>
+                        <a target="_blank" href="https://plus.google.com/u/0/b/107863090883699620484/107863090883699620484/posts" class="btn-floating btn-large gplus-bg waves-effect waves-light"><i class="fa fa-google-plus"> </i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="col-md-10 col-md-offset-1"> © 2015 Copyright <a href="http://www.MDBootstrap.com">MDBootstrap.com </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- SCRIPTS -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+
+        <!-- Material Design Bootstrap -->
+        <script type="text/javascript" src="js/lib/mdb.js"></script>
+
+
+
         <script src="js/lib/lodash.min.js"></script>
         <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>
+        <script src="js/lib/select.min.js"></script>
         <script src="js/moduleRegistration.js"></script>
         <script src="js/services/catalogService.js"></script>
         <script src="js/controllers/homeController.js"></script>
-        
+
         <script src="js/app.js"></script>
+
+
+
     </body>
+
 </html>

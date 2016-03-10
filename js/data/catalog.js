@@ -5,7 +5,7 @@
  */
 
 
-clinicalFeatures = [
+var clinicalFeatures = [
     {id: 1,
         name: "Hipotonicidad"
     },
@@ -414,7 +414,7 @@ syndromes = [
         synonym: " Acro-c\u00e9falo-poli-sindactilia tipo III",
         inheritance: "Autos\u00f3mica dominante",
         retardation: false,
-        retardationNotes:"(leve en pocos)",
+        retardationNotes: "(leve en pocos)",
         evolution: "El cuadro cl\u00ednico se presenta en la infancia y usualmente no afecta el promedio de vida.\n\
                     La apariencia facial mejora con la edad. La inteligencia usualmente es normal aunque algunos\n\
                     pacientes presentan retardo mental leve y a\u00fan no se ha aclarado si esto tiene relaci\u00f3n con el\n\
@@ -433,7 +433,7 @@ syndromes = [
         synonym: " S\u00edndrome de carcinoma nevoide de c\u00e9lulas basales",
         inheritance: "Autos\u00f3mica dominante",
         retardation: true,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "Las caracter\u00edsticas aparecen en la infancia y se acent\u00faan en la adolescencia.\n\
                     Los nevus pueden malignizarse especialmente en la segunda d\u00e9cada de la vida.\n\
                     Las anomal\u00edas dentales pueden ser de forma y posici\u00f3n o presentarse como quistes y tumores\n\
@@ -453,7 +453,7 @@ syndromes = [
         synonym: "Pseudo-hipoparatiroidismo",
         inheritance: "Dominante ligada a X",
         retardation: true,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "Existe marcada variaci\u00f3n fenot\u00edpica. La hipocalemia es aparente en la ni\u00f1ez\n\
                     y las convulsiones son el s\u00edntoma m\u00e1s frecuente, manifest\u00e1ndose m\u00e1s en per\u00edodos de mayor\n\
                     utilizaci\u00f3n de calcio como son la adolescencia y los embarazos. Puede requerirse manejo\n\
@@ -474,7 +474,7 @@ syndromes = [
         synonym: "S\u00edndrome de Goldenhar",
         inheritance: "Presentaci\u00f3n espor\u00e1dica",
         retardation: false,
-        retardationNotes:"(presente en pocos)",
+        retardationNotes: "(presente en pocos)",
         evolution: "El diagn\u00f3stico se hace desde el nacimiento y usualmente est\u00e1n comprometidas las estructuras\n\
                     que se desarrollan a partir del 1o. y 2o. arcos branquiales. Al parecer la severidad del desorden\n\
                     est\u00e1 dada por el nivel al cual desciende el techo de la cavidad timp\u00e1nica y de si este est\u00e1 o no\n\
@@ -483,8 +483,8 @@ syndromes = [
                     Con frecuencia se encuentran en los ojos quistes dermoides epibulares uni o bilaterales.",
         clinicalExams: "El diagn\u00f3stico es cl\u00ednico y radiol\u00f3gico. Se sugiere realizar tomograf\u00eda computarizada para\n\
                     evaluar los huesos del o\u00eddo medio como parte del estudio de audici\u00f3n.",
-        bibliography: ["FEINGOLD, M. and BAUM, J. \"Goldenhar's Syndrome\", Am j Dis Child, Vol. 132: 136-138. ", 
-                    "GORLIN, R. J. et al. (1990). \"Syndromes of the Head and Neck\", Third Edition, Oxford\n\
+        bibliography: ["FEINGOLD, M. and BAUM, J. \"Goldenhar's Syndrome\", Am j Dis Child, Vol. 132: 136-138. ",
+            "GORLIN, R. J. et al. (1990). \"Syndromes of the Head and Neck\", Third Edition, Oxford\n\
                     University Press, p\u00e1gs. 641-646."],
         features: [4, 18, 31, 32, 45, 46, 51, 59, 67]
     },
@@ -494,7 +494,7 @@ syndromes = [
         synonym: "Disostosis mand\u00edbulo-facial",
         inheritance: "Autos\u00f3mica dominante",
         retardation: false,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "El diagn\u00f3stico puede hacerse desde el nacimiento. Es importante detectar tempranamente la sordera\n\
                     e iniciar cuanto antes terapias de lenguaje. El pron\u00f3stico en general es bueno, pero en ocasiones\n\
                     pueden presentarse complicaciones respiratorias severas. Los tratamientos de ortodoncia y las cirug\u00edas\n\
@@ -512,7 +512,7 @@ syndromes = [
         synonym: "Artrogriposis m\u00faltiple cong\u00e9nita",
         inheritance: "Presentaci\u00f3n espor\u00e1dica",
         retardation: false,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "Se diagnostica al nacimiento. Usualmente cursan con inteligencia normal y responden bien a los\n\
                     tratamientos quir\u00fargicos y ortop\u00e9dicos. Aquellos pacientes con malformaciones gastrointestinales\n\
                     como gastrosquisis y atresia intestinal tienen mayor mortalidad por complicaciones en el per\u00edodo\n\
@@ -522,8 +522,8 @@ syndromes = [
                     en mujeres, deben descartarse aquellas artogriposis ligadas a X.",
         bibliography: ["COLLINS, D. L. et al. (1986). \"Multiple Intestinal Atresia and Amyoplasia Congenita in \n\
                     Four Unrelated Infats: A New Association\", Journal of Pediatric Surgery, Vol 21, No. 4,\n\
-                    p\u00e1gs. 331-333.", 
-                    "REID, C. O. M. V. et al. (1986). \"Association of Amyloplasia with Gastroschisis, Bowel Atresia,\n\
+                    p\u00e1gs. 331-333.",
+            "REID, C. O. M. V. et al. (1986). \"Association of Amyloplasia with Gastroschisis, Bowel Atresia,\n\
                     and Defects of the Muscular Layer of the Trunk\", American Journal of Medical Genetics, Vol.\n\
                     24: 701-710."],
         features: [14, 47, 83, 84, 88, 104]
@@ -534,7 +534,7 @@ syndromes = [
         synonym: "Mucoliposacaridosis tipo I",
         inheritance: "Autos\u00f3mica recesiva",
         retardation: true,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "El cuadro cl\u00ednico s\u00f3lo es evidente alrededor de los 2 a\u00f1os de edad, cuando adem\u00e1s de iniciarse\n\
                     los cambios en cara se presenta limitaci\u00f3n en movimiento de caderas, deterioro mental y aumento en\n\
                     la frecuencia de infecciones respiratorias, las cuales pueden llevar a la muerte, asociadas a \n\
@@ -547,8 +547,8 @@ syndromes = [
                     coraz\u00f3n se observan cambios de fibroelastosis endoc\u00e1rdica. Se recomienda un estudio electro y\n\
                     ecocardiogr\u00e1fico.",
         bibliography: ["ROUBICEK, M. et al. (1985). \"The Clinical Spectrum of alpha-L-Iduronidase Deficiency\",\n\
-                    American Journal of Medical Genetics, Vol. 20: 471-481.", 
-                    "STEPHAN, M. J. et al. (1989). \"Mucopolysaccharidosis I Presenting With Endocardial Fibroelastosis\n\
+                    American Journal of Medical Genetics, Vol. 20: 471-481.",
+            "STEPHAN, M. J. et al. (1989). \"Mucopolysaccharidosis I Presenting With Endocardial Fibroelastosis\n\
                     of Infancy\". American Journal of Diseases of Children, Vol. 143: 782-784."],
         features: [8, 11, 17, 21, 36, 40, 66, 83, 91, 94, 95, 96, 114, 115]
     },
@@ -558,7 +558,7 @@ syndromes = [
         synonym: "Enanismo campom\u00e9lico",
         inheritance: "Autos\u00f3mica recesiva",
         retardation: true,
-        retardationNotes:"",
+        retardationNotes: "",
         evolution: "Se dio el t\u00e9rmino \"campom\u00e9lico\" queriendo significar \"extremidades arqueadas\", siendo esta la\n\
                     caracter\u00edstica m\u00e1s importante de la entidad. La mayor\u00eda de los pacientes mueren de insuficiencia\n\
                     respiratoria enn el per\u00edodo neonatal o en infancia temprana por infecci\u00f3n respiratoria debida a \n\
@@ -572,32 +572,8 @@ syndromes = [
                     de tibia, f\u00e9mur y astr\u00e1galo; ausencia de mineralizaci\u00f3n del estern\u00f3n. En pacientes con fenotipo femenino\n\
                     es obligatorio realizar cariotipo para descartar un genotipo masculinoo con disgenesia gonada, lo cual\n\
                     cual ocurre en el 50% de los casos.",
-        bibliography: ["HALL, B. D. and SPRANGE, J. W. (1980). \"Campomelic Dysplasia\", Am J Dis Child, Vol. 134: 285-289.", 
-                    "HOUSTON, C. S. et al. (1983). \"The Campomelic Syndrome\", American Journal of Medical Genetics, Vol.. 13: 3-28."],
-        features: [6, 8, 11, 13, 40, 47, 49, 57, 59, 62, 65, 66, 67, 72, 80, 82, 114, 115]
-    },
-    {
-        id: 1,
-        name: "Displasia Campom\u00e9lica",
-        synonym: "Enanismo campom\u00e9lico",
-        inheritance: "Autos\u00f3mica recesiva",
-        retardation: true,
-        retardationNotes:"",
-        evolution: "Se dio el t\u00e9rmino \"campom\u00e9lico\" queriendo significar \"extremidades arqueadas\", siendo esta la\n\
-                    caracter\u00edstica m\u00e1s importante de la entidad. La mayor\u00eda de los pacientes mueren de insuficiencia\n\
-                    respiratoria enn el per\u00edodo neonatal o en infancia temprana por infecci\u00f3n respiratoria debida a \n\
-                    broncoaspiraci\u00f3n. Aquellos que sobreviven presentan falla en el crecimiento, dificultades para la\n\
-                    alimentaci\u00f3n y evidencia de alteraci\u00f3n severa en el Sistema Nervioso Central. En los hombres (46XY)\n\
-                    es frecuente encontrar un fenotipo femenino por disgenesia gonadal. Usualmente las extremidades superiores\n\
-                    no est\u00e1n arqueadas pero s\u00ed pueden estar ligeramente acortadas. Casi todos los pacientes han muerto\n\
-                    antes de los 10 meses de edad, aunque se ha descrito un paciente de 17 a\u00f1os. Todos los que han sobrevivido\n\
-                    presentan retardo mental y sordera.",
-        clinicalExams: "El diagn\u00f3stico es cl\u00ednico y radiol\u00f3gico. Se encuentra falta de osificaci\u00f3n de las ep\u00edfisis proximales\n\
-                    de tibia, f\u00e9mur y astr\u00e1galo; ausencia de mineralizaci\u00f3n del estern\u00f3n. En pacientes con fenotipo femenino\n\
-                    es obligatorio realizar cariotipo para descartar un genotipo masculinoo con disgenesia gonada, lo cual\n\
-                    cual ocurre en el 50% de los casos.",
-        bibliography: ["HALL, B. D. and SPRANGE, J. W. (1980). \"Campomelic Dysplasia\", Am J Dis Child, Vol. 134: 285-289.", 
-                    "HOUSTON, C. S. et al. (1983). \"The Campomelic Syndrome\", American Journal of Medical Genetics, Vol.. 13: 3-28."],
+        bibliography: ["HALL, B. D. and SPRANGE, J. W. (1980). \"Campomelic Dysplasia\", Am J Dis Child, Vol. 134: 285-289.",
+            "HOUSTON, C. S. et al. (1983). \"The Campomelic Syndrome\", American Journal of Medical Genetics, Vol.. 13: 3-28."],
         features: [6, 8, 11, 13, 40, 47, 49, 57, 59, 62, 65, 66, 67, 72, 80, 82, 114, 115]
     },
     {
@@ -606,7 +582,7 @@ syndromes = [
         synonym: "S\u00edndrome de Silver-Russell",
         inheritance: "Presentaci\u00f3n espor\u00e1dica",
         retardation: false,
-        retardationNotes:"leve en el 35%",
+        retardationNotes: "leve en el 35%",
         evolution: "La baja estatura se presenta desde antes del nacimiento y se mantiene a trav\u00e9s de la ni\u00f1ez, alcanzando\n\
                     una estatura promedio en la edad adulta de 149 cm para los hombres y 138 cm para las mujeres. La asimetr\u00eda\n\
                     m\u00fasculo-esquel\u00e9tica puede comprometer solo la cabeza, el tronco o las extremidades y ocasionalmente ser\n\
@@ -619,11 +595,11 @@ syndromes = [
                     de gonadatropinas urinarias y en otros hay deficiencia de hormona de crecimiento. Se recomienda realizar\n\
                     evaluaciones peri\u00f3dicas para descartar la presencia de tumores renales o adrenales.",
         bibliography: ["CASSIDY, S. B. et al. (1986). \"Russell-Silver Syndrome and Hypopituitarism\", Am J Dis Child, Vol. 140:\n\
-                    155-159.", 
-                    "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
+                    155-159.",
+            "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
                     Vol. 107: 733-737."],
         features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
     }
-    
+
 ];
 
