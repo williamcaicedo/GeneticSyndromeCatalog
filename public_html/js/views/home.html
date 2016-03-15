@@ -1,0 +1,72 @@
+
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header" id="products">Cat&aacute;logo de S&iacute;ndromes gen&eacute;ticos
+            <small>Universidad Tecnol&oacute;gica de Bol&iacute;var</small>
+        </h1>
+        <ui-select multiple ng-model="$parent.selectedFeatures" on-select="filterSyndromes($item, $model)" 
+                   on-remove="filterSyndromes($item, $model)" theme="bootstrap" ng-disabled="disabled">
+            <ui-select-match placeholder="Seleccione las caracter&iacute;stica(s)...">{{$item.name}}</ui-select-match>
+            <ui-select-choices repeat="feature in features | propsFilter: {name: $select.search}">
+                <div ng-bind-html="feature.name | highlight: $select.search"></div>
+
+            </ui-select-choices>
+        </ui-select>
+        <br>
+        <hr>
+    </div>
+</div>
+<div ng-repeat="syndrome in filteredSyndromes">
+    <!-- Project One -->
+    <div  class="row">
+        <div class="col-md-7">
+            <a href="">
+                <img class="img-responsive z-depth-1 hoverable hidden-sm hidden-xs" src="img/dna.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="col-md-5" style="padding-top: 1em" id="videomaker">
+            <h3><i class="fa fa-stethoscope "></i> {{syndrome.name}}</h3>
+            <h4>Sin&oacute;nimo: {{syndrome.synonym}}</h4>
+            <p>{{syndrome.evolution| limitTo:200}}...</p>
+            <a href="#/detail/{{syndrome.id}}">
+                <button type="button" class="btn btn-info waves-effect waves-light">Leer m&aacute;s...</button>
+            </a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+</div>
+<hr>
+
+<!-- Pagination -->
+<!--div class="row text-center">
+    <div class="col-lg-12">
+        <ul class="pagination">
+            <li>
+                <a href="#">&laquo;</a>
+            </li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+            <li>
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </div>
+</div-->
+<!-- /.row -->

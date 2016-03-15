@@ -7,7 +7,7 @@
 
 
 app = angular.module('geneticSyndromeCatalogApp',['geneticSyndromeCatalogAppControllers', 'geneticSyndromeCatalogAppServices', 
-    'ngSanitize', 'ui.select', 'lodash']);
+    'ngSanitize', 'ngRoute', 'ui.select', 'lodash']);
 
 app.filter('propsFilter', function() {
   return function(items, props) {
@@ -39,3 +39,20 @@ app.filter('propsFilter', function() {
     return out;
   };
 });
+
+app.config(['$routeProvider',
+    function ($routeProvider) {
+        $routeProvider.
+        when('/detail/:syndromeId', {
+            templateUrl: 'js/views/detail.html',
+            controller: 'detailController'
+        }).when('/', {
+            templateUrl: 'js/views/home.html',
+            controller: 'homeController'
+        }).otherwise({
+            redirectTo: '/'
+        });
+
+        
+
+    }]);
