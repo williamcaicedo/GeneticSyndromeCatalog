@@ -1,0 +1,25 @@
+<div class="row">
+
+    <div class="col-lg-7">
+
+        <div><a href="#/"><i class="fa fa-arrow-left "></i> Atr&aacute;s</a><h2> {{syndrome.name}}</h2></div>
+        <h5>Sin&oacute;nimo: <small>{{syndrome.synonym}}</small></h5>
+        <h5>Herencia: <small>{{syndrome.inheritance}}</small></h5>
+        <h5>Retardo mental: <small><span ng-if="syndrome.retardation">S&iacute;</span>
+                <span ng-if="!syndrome.retardation">No</span> <span ng-if="syndrome.retardationNotes"> ({{syndrome.retardationNotes}})</span></small></h5>
+        <div class="row">
+            <div class="col-lg-7">
+                <h3>Caracter&iacute;sticas cl&iacute;nicas</h3>
+                <ul>
+                    <li ng-repeat="feature in syndrome.completeFeatures">{{feature.name}}</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-5" style="">
+        <img src="http://placehold.it/550x650">
+    </div>
+
+</div>
