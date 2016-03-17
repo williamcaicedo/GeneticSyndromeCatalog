@@ -219,6 +219,48 @@ services.factory('catalogService', ['_', function (_) {
                             "SaaL, H. M. et al-. (1985). \"Reevaluation of Russell-Silver syndrome\", The Journal of Pediatrics,\n\
                     Vol. 107: 733-737."],
                         features: [10, 11, 15, 24, 47, 74, 86, 93, 103, 113, 115]
+                    },
+                    {
+                        id: 83,
+                        name: "S\u00edndrome de Smith-Lemli-Opitz",
+                        synonym: "S\u00edndrome RSH",
+                        inheritance: "Autosómica recesiva",
+                        retardation: true,
+                        retardationNotes: "",
+                        evolution: "Se ha descrito disminución en los movimientos fetales y usualmente bajo peso y presentación de nalgas al nacer.\n\
+                    Desde el principio se aprecia la facies característica con narinas antevertidas y la sindactilia del 2do y 3er dedos de los pies\n\
+                    e hipospadias y criptorquidia en hombres. Se presentan dificultades en la alimentación, falla en el crecimiento, vómito y \n\
+                    comportamiento irritable en el periodo neonatal. Hay una mayor susceptibilidad a infecciones, especialmente respiratorias, las cuales\n\
+                    usualmente determinan la sobrevida. La mortalidad neonatal en el primer año es alta. Pocos pacientes llegan a la edad adulta. La\n\
+                    entidad es mucho más frecuente en hombres. Se ha descrito un tipo II más severo, con múltiples anomalías viscerales y frecuente\n\
+                    mortalidad neonatal.",
+                        clinicalExams: "El diagnóstico se basa en el cuadro clínico. Se ha sugerido que el gen se encuentra en el extremo terminal\n\
+                    del brazo largo del cromosoma 7. El diagnóstico en mujeres puede ser muy difícil.",
+                        bibliography: ["CURRY, C. J. R. et al. (1987). \"Smith-Lemli-Opitz Syndrome-type II\" American Journal of Medical Genetics,\n\
+                    Vol. 26:45-57.",
+                            "CHERSTVOY, E. D. et al. (1984). \"The Smith-Lemli-opitz Syndrome\", Virchows Archiv A, Vol. 404: 413-425."],
+                        features: [7, 21, 27, 25, 47, 57, 79, 82, 99, 100, 114, 115]
+                    },
+                    {
+                        id: 120,
+                        name: "Displasia Metatrópica",
+                        synonym: "Enanismo metatrópico de Maroteaux",
+                        inheritance: "Autosómica recesiva (la mayoría no-letal, se han descrito casos de herencia autosómica dominante no letal y otros\n\
+                    de herencia autosómica recesiva letal)",
+                        retardation: false,
+                        retardationNotes: "",
+                        evolution: "Al nacer se encuentra un niño con facies normal, extremidades cortas y un tronco alargado y angosto. Estas\n\
+                    características van cambiando en la medida en que se acentúa la displasia ósea, lo cual llevó a darle el nombre de metatrópica\n\
+                    (del griego \"metatropos\": apariencia cambiante). Las alteraciones vertebrales (aniso y platispondilia) y la cifoescoliosis\n\
+                    secundaria son progresivas llevando a un acortamiento y deformidad del tórax, lo que puede observarse desde la niñez temprana.\n\
+                    La severidad de la alteración torácica puede llevar a muerte temprana por problemas respiratorios. La hipoplasia del odontoides\n\
+                    y la inestabilidad atlanto-axial en las vértebras cervicales puede tener serias consecuencias neurológicas (cuadriplegia). El\n\
+                    desarrollo mental es normal. La talla adulta puede estar entre 110 y 120 cm en los casos severos. La mayoría de los pacientes\n\
+                    sobreviven hasta la edad adulta y su principal complicación es la escoliosis progresiva.",
+                        clinicalExams: "El diagnóstico se basa en el cuadro clínico y los hallazgos radiológicos.",
+                        bibliography: ["BECK, M. et al (1983). \"Heterogeneity of Metatropic Dysplasia\", Eur. J. Pediatr., Vol. 140: 231-237.",
+                            "JENKINS, P. et al. (1970). \"Metatropic dwarfism\", Br. J. Radiol., Vol 43: 561.565."],
+                        features: [62, 65, 66, 67, 72, 83, 115]
                     }
 
                 
@@ -425,21 +467,6 @@ services.factory('catalogService', ['_', function (_) {
                     },
                     {id: 62,
                         name: "Hipoplasia u otras anomal\u00edas de clav\u00edculas, costillas, omoplato"
-                    },
-                    {id: 63,
-                        name: "Pectus excavatum o carinatum"
-                    },
-                    {id: 59,
-                        name: "Malformaci\u00f3n auricular incluyendo ap\u00e9ndices pre-auriculares"
-                    },
-                    {id: 60,
-                        name: "Cuello redundante"
-                    },
-                    {id: 61,
-                        name: "Cuello corto"
-                    },
-                    {id: 62,
-                        name: "Hipoplasia u otras anomal\u00edas de clav\u00edculas costillas omoplato"
                     },
                     {id: 63,
                         name: "Pectus excavatum o carinatum"
