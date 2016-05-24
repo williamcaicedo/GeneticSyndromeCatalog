@@ -6,9 +6,10 @@
 
 var controllerModule = angular.module('geneticSyndromeCatalogAppControllers');
 
-controllerModule.controller('homeController', ['$scope', 'catalogService', '_', function ($scope, catalogService, _) {
+controllerModule.controller('homeController', ['$scope', '$rootScope', 'catalogService', '_', 
+    function ($scope, $rootScope, catalogService, _) {
         $scope.features = [];
-        $scope.selectedFeatures = [];
+        
         $scope.allSyndromes = [];
         $scope.filteredSyndromes = [];
 
@@ -21,10 +22,10 @@ controllerModule.controller('homeController', ['$scope', 'catalogService', '_', 
         };
 
         $scope.filterSyndromes = function (item, model) {
-            if ($scope.selectedFeatures.length === 0) {
+            if ($rootScope.selectedFeatures.length === 0) {
                 $scope.filteredSyndromes = $scope.allSyndromes;
             } else {
-                var ids = _.map($scope.selectedFeatures, 'id');
+                var ids = _.map($rootScope.selectedFeatures, 'id');
                 $scope.filteredSyndromes = _.filter($scope.allSyndromes, function (s) {
                     var t = _.every(ids, function (i) {
                         return _.find(s.features, function (f) {
@@ -39,6 +40,10 @@ controllerModule.controller('homeController', ['$scope', 'catalogService', '_', 
         };
         $scope.getAllFeatures();
         $scope.getAllSyndromes();
+        
+        if ($rootScope.selectedFeatures) {
+            $scope.filterSyndromes();
+        }
 
 
     }]);
