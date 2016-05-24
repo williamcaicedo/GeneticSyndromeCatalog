@@ -5,7 +5,7 @@
         <h1 class="page-header" id="products">Cat&aacute;logo de S&iacute;ndromes gen&eacute;ticos
             <small>Universidad Tecnol&oacute;gica de Bol&iacute;var</small>
         </h1>
-        <ui-select multiple ng-model="$parent.selectedFeatures" on-select="filterSyndromes($item, $model)" 
+        <ui-select multiple ng-model="$parent.$parent.selectedFeatures" on-select="filterSyndromes($item, $model)" 
                    on-remove="filterSyndromes($item, $model)" theme="bootstrap" ng-disabled="disabled">
             <ui-select-match placeholder="Seleccione las caracter&iacute;stica(s)...">{{$item.name}}</ui-select-match>
             <ui-select-choices repeat="feature in features | propsFilter: {name: $select.search}">
