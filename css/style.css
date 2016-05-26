@@ -27,3 +27,11 @@ footer.page-footer a {
 color: #fff;
 font-size: 15px;
 }
+
+.dropdown-menu {
+    font-size: 18px
+}
+
+.btn-xs {
+    font-size: 20px
+}
