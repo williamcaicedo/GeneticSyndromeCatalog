@@ -2346,6 +2346,9 @@ A Primary Defect in B-Galactosidase\", American Journal of Medical Genetics, Vol
             getFeatureById: function (fid) {
                 return _.where(this._features, {id: fid})[0];
             },
+            getSyndromeNames: function () {
+                return _.pluck(this._syndromes, 'name');
+            },
             _features: [
                 {id: 1,
                     name: "Hipotonicidad"
