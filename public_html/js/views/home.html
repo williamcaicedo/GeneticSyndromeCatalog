@@ -17,18 +17,19 @@
         <hr>
     </div>
 </div>
+<div ng-show="filteredSyndromes.length === 0">
+    <h4 class="col-lg-12 text-center">No hay resultados</h4>
+</div>
 <div ng-repeat="syndrome in filteredSyndromes">
-    <!-- Project One -->
+    
     <div  class="row">
         <div class="col-md-7">
-            <a href="">
-                <img class="img-responsive z-depth-1 hoverable hidden-sm hidden-xs" src="img/dna.jpg" alt="">
-            </a>
+            <img class=" center-block img-responsive z-depth-1 hoverable hidden-sm hidden-xs" src="img/dna2.jpg" alt="">
 
         </div>
-        <div class="col-md-5" style="padding-top: 1em" id="videomaker">
+        <div class="col-md-5" style="padding-top: 1em">
             <h3><i class="fa fa-stethoscope "></i> {{syndrome.name}}</h3>
-            <h4>Sin&oacute;nimo: {{syndrome.synonym}}</h4>
+            <h5><small>Sin&oacute;nimo: {{syndrome.synonym}}</small></h5>
             <p>{{syndrome.evolution| limitTo:200}}...</p>
             <a href="#/detail/{{syndrome.id}}">
                 <button type="button" class="btn btn-info waves-effect waves-light">Leer m&aacute;s...</button>

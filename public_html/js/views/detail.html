@@ -1,40 +1,38 @@
 
-    <div class="row">
-        <div class="col-lg-7">
+<div class="row">
+    <div class="col-lg-7">
 
-            <div><a href="#/"><i class="fa fa-arrow-left "></i> Atr&aacute;s</a><h2> {{syndrome.name}}</h2></div>
-            <h5><span class="medium-500">Sin&oacute;nimo:</span> <small>{{syndrome.synonym}}</small></h5>
-            <h5><span class="medium-500">Herencia:</span> <small>{{syndrome.inheritance}}</small></h5>
-            <h5><span class="medium-500">Retardo mental:</span> <small><span ng-if="syndrome.retardation">S&iacute;</span>
-                    <span ng-if="!syndrome.retardation">No</span> <span ng-if="syndrome.retardationNotes"> ({{syndrome.retardationNotes}})</span></small></h5>
-            <h5 class="medium-500">Evoluci&oacute;n</h5>
-            <p>{{syndrome.evolution}}</p>
+        <div><a href="#/"><i class="fa fa-arrow-left "></i> Atr&aacute;s</a><h2> {{syndrome.name}}</h2></div>
+        <h5><span class="medium-500">Sin&oacute;nimo:</span> <small>{{syndrome.synonym}}</small></h5>
+        <h5><span class="medium-500">Herencia:</span> <small>{{syndrome.inheritance}}</small></h5>
+        <h5><span class="medium-500">Retardo mental:</span> <small><span ng-if="syndrome.retardation">S&iacute;</span>
+                <span ng-if="!syndrome.retardation">No</span> <span ng-if="syndrome.retardationNotes"> ({{syndrome.retardationNotes}})</span></small></h5>
+        <h5 class="medium-500">Evoluci&oacute;n</h5>
+        <p>{{syndrome.evolution}}</p>
 
-            <h5 class="medium-500">Ex&aacute;menes cl&iacute;nicos de utilidad diagn&oacute;stica</h5>
-            <p>{{syndrome.clinicalExams}}</p>
+        <h5 class="medium-500">Caracter&iacute;sticas cl&iacute;nicas</h5>
+        <ul>
+            <li ng-repeat="feature in syndrome.completeFeatures"><p><i class="fa fa-check-square "></i> {{feature.name}}</p></li>
+        </ul>
 
 
-
-        </div>
-        <div class="col-lg-5" style="">
-            <img class="img-responsive z-depth-1 hoverable" src="img/syndromes/img_{{syndrome.id}}.jpg">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-7">
-            <h5 class="medium-500">Caracter&iacute;sticas cl&iacute;nicas</h5>
-            <ul>
-                <li ng-repeat="feature in syndrome.completeFeatures"><p><i class="fa fa-check-square "></i> {{feature.name}}</p></li>
-            </ul>
-        </div>
-        <div class="col-lg-5">
-            <h5 class="medium-500">Bibliograf&iacute;a</h5>
-            <ul>
-                <li ng-repeat="entry in syndrome.bibliography"><p><i class="fa fa-check-square "></i> {{entry}}</p></li>
-            </ul>
-        </div>
 
     </div>
+    <div class="col-lg-5" style="">
+        <img class="img-responsive" src="img/syndromes/img_{{syndrome.id}}.jpg">
+        <h5 class="medium-500">Ex&aacute;menes cl&iacute;nicos de utilidad diagn&oacute;stica</h5>
+        <p>{{syndrome.clinicalExams}}</p>
+        <h5 class="medium-500">Bibliograf&iacute;a</h5>
+        <ul>
+            <li ng-repeat="entry in syndrome.bibliography"><p><i class="fa fa-check-square "></i> {{entry}}</p></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+
+
+
+</div>
 
 
 
