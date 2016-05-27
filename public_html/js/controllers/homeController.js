@@ -6,10 +6,10 @@
 
 var controllerModule = angular.module('geneticSyndromeCatalogAppControllers');
 
-controllerModule.controller('homeController', ['$scope', '$rootScope', 'catalogService', '_', 
+controllerModule.controller('homeController', ['$scope', '$rootScope', 'catalogService', '_',
     function ($scope, $rootScope, catalogService, _) {
         $scope.features = [];
-        
+
         $scope.allSyndromes = [];
         $scope.filteredSyndromes = [];
 
@@ -40,10 +40,23 @@ controllerModule.controller('homeController', ['$scope', '$rootScope', 'catalogS
         };
         $scope.getAllFeatures();
         $scope.getAllSyndromes();
-        
+
         if ($rootScope.selectedFeatures) {
             $scope.filterSyndromes();
         }
+
+        if (!$rootScope.showFirstTab) {
+            $rootScope.showFirstTab = true;
+        }
+
+        $scope.clearSearchQuery = function (tab) {
+            if (tab === 'one') {
+                $rootScope.selectedFeatures=[];
+                $scope.filterSyndromes();
+            } else {
+                $rootScope.syndromeSearchQuery = '';
+            }
+        };
 
 
     }]);

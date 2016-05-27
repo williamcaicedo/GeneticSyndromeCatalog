@@ -2188,7 +2188,7 @@ A Primary Defect in B-Galactosidase\", American Journal of Medical Genetics, Vol
                     clinicalExams: "El diagn\u00f3stico es cl\u00ednico, radiol\u00f3gico e histopatol\u00f3gico. Se recomienda evaluaci\u00f3n visual y auditiva, as\u00ed como controles radiol\u00f3gicos frecuentes para detectar en forma temprana la aparici\u00f3n de malignidades.",
                     bibliography: ["BRITISH NEUROFIBROMATOSIS ASSOCIATION (1987). \"Neuroflbromatosis\", The Lancet, March 21: 60-664.",
                         "MULVIHILL, J. J. et al. (1990). \"Neurofibromatosis 1 (Recklinghausen Disease) and Neurofibromatosis 2 (Bilateral Acoustic Neurofibromatosis)\", Annals of Internal Medicine, Vol. 113, No. 1:39-52."],
-                    features: [8, 33, 86, 86, 110, 113]
+                    features: [8, 33, 86, 110, 113]
                 },
                 {
                     id: 39,
