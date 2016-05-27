@@ -35,3 +35,7 @@ font-size: 15px;
 .btn-xs {
     font-size: 20px
 }
+
+.tab-container {
+    padding-top:15px;
+}
