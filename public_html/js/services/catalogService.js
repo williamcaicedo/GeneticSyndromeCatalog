@@ -273,7 +273,7 @@ services.factory('catalogService', ['_', function (_) {
                     infecciones respiratorias recurrentes en la infancia. El pron\u00f3stico depende del grado de retardo mental presente en el paciente. \n\
                     Se han descrito casos con herencia autos\u00f3mica recesiva y autos\u00f3mica dominante.",
                     clinicalExams: "El diagn\u00f3stico es cl\u00ednico con ayuda radiol\u00f3gica, incluyendo hallazgos como r\u00f3tulas hipopl\u00e1sicas o ausentes, seis v\u00e9rtebras \n\
-                    lumbares y retardo en la maduraci\u00f3n Ósea.",
+                    lumbares y retardo en la maduraci\u00f3n \u00f3sea.",
                     bibliography: ["HASPESLAGH, M. et al. (1984). \"The Coffin-Siris Syndrome: Report of a family and further delineation\", Clinical Genetics, \n\
                     Vol. 26: 374-378."],
                     features: [1, 7, 17, 77, 81, 84, 91, 114, 115]
@@ -299,7 +299,7 @@ services.factory('catalogService', ['_', function (_) {
                 {
                     id: 7,
                     name: "Distrofia Tor\u00e1cica de Jeune",
-                    synonym: "displasia tor\u00e1cica asfixiante",
+                    synonym: "Displasia tor\u00e1cica asfixiante",
                     inheritance: "Autos\u00f3mica recesiva",
                     retardation: false,
                     retardationNotes: "",
@@ -563,7 +563,7 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 32,
-                    name: "S\u00edndrome de larsen ",
+                    name: "S\u00edndrome de Larsen ",
                     synonym: "S\u00edndrome de luxaciones cog\u00e9nitas m\u00faltiples",
                     inheritance: "Autos\u00f3mica dominante",
                     retardation: false,
@@ -1345,7 +1345,7 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 54,
-                    name: "S\u00edndrome Cerebro-oculo-Facio-Esqueletico (COFS)",
+                    name: "S\u00edndrome Cerebro-\u00d3culo-Facio-Esqu\u00e9letico (COFS)",
                     synonym: "Artrogriposis neurog\u00e9nica o S\u00edndrome de Pena-Shokeir Tipo II",
                     inheritance: "Autos\u00f3mica recesiva",
                     retardation: true,
@@ -1432,7 +1432,7 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 44,
-                    name: "S\u00edndrome Trico-Dento-Óseo",
+                    name: "S\u00edndrome Trico-Dento-\u00d3seo",
                     synonym: "Amelog\u00e9nesis imperfecta, taurodontia y osteoesclerosis",
                     inheritance: "Autos\u00f3mica dominante",
                     retardation: false,
@@ -1905,7 +1905,7 @@ services.factory('catalogService', ['_', function (_) {
                     extremidad m\u00e1s grande que la otra.",
                     bibliography: ["SERVELLE, M. (1985). \"Klippel and Tr\u00e9naunay's Syndrome, 768 Operated Cases\", Ann. surg., Vol. 201, \n\
         No. 3: 365-373."],
-                    features: [86, 88, 88, 88, 113]
+                    features: [86, 88, 113]
                 },
                 {
                     id: 89,
@@ -2633,7 +2633,7 @@ A Primary Defect in B-Galactosidase\", American Journal of Medical Genetics, Vol
                     name: "Cardiopat\u00edas"
                 },
                 {id: 95,
-                    name: "Hernias onfalocele o defectos de la pared abdominal _"
+                    name: "Hernias onfalocele o defectos de la pared abdominal"
                 },
                 {id: 96,
                     name: "Hepatomegalia hepatoesplenomegal\u00eda o malformaciones hep\u00e1ticas o spl\u00e9nicas"
