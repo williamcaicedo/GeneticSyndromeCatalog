@@ -423,7 +423,7 @@ services.factory('catalogService', ['_', function (_) {
                 {
                     id: 68,
                     name: "S\u00edndrome de Aarskog",
-                    synonym: "Displacia facio-d\u00edgito-g\u00e9nital",
+                    synonym: "Displasia facio-d\u00edgito-g\u00e9nital",
                     inheritance: "Recesiva ligada a X o Autos\u00f3mica dominante influenciada por el sexo",
                     retardation: false,
                     retardationNotes: "",
@@ -441,8 +441,8 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 12,
-                    name: "Displacia Ectod\u00e9rmica Tipo Rapp-Hodgkin",
-                    synonym: "Displacia Ectod\u00e9rmica hipohidr\u00f3tica tipo autos\u00f3mica dominante",
+                    name: "Displasia Ectod\u00e9rmica Tipo Rapp-Hodgkin",
+                    synonym: "Displasia Ectod\u00e9rmica hipohidr\u00f3tica tipo autos\u00f3mica dominante",
                     inheritance: "Autos\u00f3mica dominante (no se descarta la autos\u00f3mica dominante ligada a X).",
                     retardation: false,
                     retardationNotes: "",
@@ -456,7 +456,7 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 26,
-                    name: "Displacia Ectod\u00e9rmica Hipohidr\u00f3tica",
+                    name: "Displasia Ectod\u00e9rmica Hipohidr\u00f3tica",
                     synonym: "S\u00edndrome de Christ-Siemens-Touraine",
                     inheritance: "Recesiva ligada a X",
                     retardation: false,
@@ -543,7 +543,7 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 119,
-                    name: "Displacia Diastr\u00f3fica",
+                    name: "Displasia Diastr\u00f3fica",
                     synonym: "S\u00edndrome de enanismo Diastr\u00f3fico",
                     inheritance: "Autos\u00f3mica recesiva",
                     retardation: false,
