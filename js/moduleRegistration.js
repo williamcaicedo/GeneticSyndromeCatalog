@@ -5,6 +5,7 @@
  */
 angular.module('geneticSyndromeCatalogAppControllers',[]);
 angular.module('geneticSyndromeCatalogAppServices',[]);
+angular.module('geneticSyndromeCatalogAppDirectives',[]);
 
 angular.module('lodash',[]).factory('_', function(){
         return window._;
