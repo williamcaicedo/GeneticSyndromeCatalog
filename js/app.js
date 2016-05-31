@@ -7,7 +7,7 @@
 
 
 app = angular.module('geneticSyndromeCatalogApp',['geneticSyndromeCatalogAppControllers', 'geneticSyndromeCatalogAppServices', 
-    'ngSanitize', 'ngRoute', 'ui.select', 'ui.bootstrap', 'lodash']);
+    'ngSanitize', 'ngRoute', 'angular-loading-bar', 'ui.select', 'ui.bootstrap', 'lodash']);
 
 app.filter('propsFilter', function() {
   return function(items, props) {
