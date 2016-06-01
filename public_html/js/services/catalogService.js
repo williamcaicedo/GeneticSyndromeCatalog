@@ -640,8 +640,8 @@ services.factory('catalogService', ['_', function (_) {
                 },
                 {
                     id: 16,
-                    name: "S\u00edndrome Oculo-Dento-Digital ",
-                    synonym: "Displasia oculo-dento-\u00f3sea",
+                    name: "S\u00edndrome \u00d3culo-Dento-Digital ",
+                    synonym: "Displasia \u00f3culo-dento-\u00f3sea",
                     inheritance: "Autos\u00f3mica dominante",
                     retardation: false,
                     retardationNotes: "",
@@ -718,7 +718,7 @@ services.factory('catalogService', ['_', function (_) {
                 {
                     id: 124,
                     name: "S\u00edndrome de Hallermann-Streiff",
-                    synonym: "S\u00edndrome oculo-mandibulo-facial",
+                    synonym: "S\u00edndrome \u00f3culo-mandibulo-facial",
                     inheritance: "Presentaci\u00f3n espor\u00e1dica (algunos Autos\u00f3mica dominante)",
                     retardation: false,
                     retardationNotes: "Presente en pocos",
@@ -786,7 +786,7 @@ services.factory('catalogService', ['_', function (_) {
                     directa de la m\u00e9dula espinal secundaria a hipermovilidad por encima o por debajo del segmento vertebral fusionado. \n\
                     Otras anomal\u00edas asociadas descritas en la literatura son: sordera, par\u00e1lisis de algunos m\u00fasculos oculares, \n\
                     cardiopat\u00edas, cifosis, asimetr\u00eda facial, paladar hendido y/o anomal\u00edas renales. El s\u00edndrome de Wildervanck \n\
-                    (s\u00edndrome cervico-oculoac\u00fastico) es una variante de esta entidad, incluyendo adem\u00e1s de las anomal\u00edas cervicales \n\
+                    (s\u00edndrome cervico-\u00f3culoac\u00fastico) es una variante de esta entidad, incluyendo adem\u00e1s de las anomal\u00edas cervicales \n\
                     del s\u00edndrome de Klippel-Feil, sordera y par\u00e1lisis de los m\u00fasculos abductores oculares (s\u00edndrome de Duane). Se ha \n\
                     propuesto entre las etiolog\u00edas: infecciones intra-uterinas, alteraciones de temperatura y/o alteraciones vasculares \n\
                     que impidan la adecuada segmentaci\u00f3n de los somitas mesod\u00e9rmicos entre las semanas 3 y 17 de la vida intrauterina. \n\
@@ -1358,7 +1358,7 @@ services.factory('catalogService', ['_', function (_) {
                     clinicalExams: "El diagn\u00f3stico es cl\u00ednico, radiol\u00f3gico y patol\u00f3gico. En Sistema Nervioso Central se encuentra disminuci\u00f3n de sustancia\n\
                     blanca, hipoplasia o agenesia de cuerpo calloso, hipoplasia cerebelar y calcificaci\u00f3n intra-craneal. RX muestran osteoporosis,\n\
                     sin embargo \u00e9sta puede no estar presente al nacimiento.",
-                    bibliography: ["GERSHONI-BARUCH, R. et al. (1991). \"Cerebro-Oculo-Facio-Skeletal Syndrome: Further Delineation\", American Journal of \n\
+                    bibliography: ["GERSHONI-BARUCH, R. et al. (1991). \"Cerebro-\u00d3culo-Facio-Skeletal Syndrome: Further Delineation\", American Journal of \n\
         Medical Genetics, Vol. 41: 74-77."],
                     features: [1, 7, 25, 28, 31, 37, 41, 47, 83, 91, 98, 114, 117]
                 },
@@ -1947,7 +1947,7 @@ services.factory('catalogService', ['_', function (_) {
                 {
                     id: 55,
                     name: "S\u00edndrome de Lowe",
-                    synonym: "S\u00edndrome oculo-cerebro-renal",
+                    synonym: "S\u00edndrome \u00f3culo-cerebro-renal",
                     inheritance: "Recesiva ligada a X",
                     retardation: true,
                     retardationNotes: "",
@@ -2167,7 +2167,7 @@ A Primary Defect in B-Galactosidase\", American Journal of Medical Genetics, Vol
                 {
                     id: 15,
                     name: "S\u00edndrome de Waardenburg",
-                    synonym: "Displasia inter-oculo-irido-dermato-auditiva",
+                    synonym: "Displasia inter-\u00f3culo-irido-dermato-auditiva",
                     inheritance: "Autos\u00f3mica dominante",
                     retardation: false,
                     retardationNotes: "",
