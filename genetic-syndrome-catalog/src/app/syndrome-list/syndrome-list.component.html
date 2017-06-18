@@ -1,0 +1,26 @@
+<div class="syndrome-list">
+    <div ng-show="filteredSyndromes.length === 0 || filteredSynd.length === 0">
+        <h4 class="col-lg-12 text-center">No hay resultados</h4>
+    </div>
+    <div ng-repeat="syndrome in filteredSyndromes | orderBy:'name' | filterBy: ['name','synonym']: $root.syndromeSearchQuery as filteredSynd">
+
+        <div class="row">
+            <div class="col-md-7">
+                <img class=" center-block img-responsive z-depth-1 hoverable hidden-sm hidden-xs" src="img/syndromes/thumbs/img_{{syndrome.id}}.jpg"
+                    alt="">
+
+            </div>
+            <div class="col-md-5" style="padding-top: 1em">
+                <h3><i class="fa fa-stethoscope "></i> {{syndrome.name}}</h3>
+                <h5><small>Sin&oacute;nimo: {{syndrome.synonym}}</small></h5>
+                <p>{{syndrome.evolution| limitTo:200}}...</p>
+                <a href="#/detail/{{syndrome.id}}">
+                <button type="button" class="btn btn-info waves-effect waves-light">Leer m&aacute;s...</button>
+            </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+</div>
