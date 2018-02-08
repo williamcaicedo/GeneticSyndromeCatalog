@@ -1,3 +1,5 @@
+import { SyndromeService } from '../services/syndromes.service';
+import { Syndrome } from '../entities/syndrome';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,5 +9,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class SyndromeListComponent implements OnInit {
 
-	ngOnInit() { }
+	syndromes: Syndrome[];
+	constructor(private syndromeService: SyndromeService) {}
+	ngOnInit() { 
+		this.syndromeService.getSyndromes().then(syndromes => {this.syndromes = syndromes});
+	}
 }
